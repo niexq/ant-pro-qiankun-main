@@ -69,4 +69,15 @@ export default defineConfig({
   mfsu: {},
   webpack5: {},
   exportStatic: {},
+  qiankun: {
+    master: {
+      // 注册子应用信息
+      apps: [
+        {
+          name: 'app1', // 唯一 id
+          entry: '//localhost:8899', // html entry
+        },
+      ],
+    },
+  },
 });
